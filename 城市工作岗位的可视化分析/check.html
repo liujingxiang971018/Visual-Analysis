@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>information</title>
+<link href="./style_log.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="login" mycollectionplug="bind">
+<div class="login_m">
+<div class="login_logo"><img src="./toplogo.png" width="196" height="46"></div>
+<div class="login_boder">
+
+<div class="login_padding" id="login_model">
+
+  <h2>city</h2>
+  <label>
+    <input type="text" id="username" class="txt_input txt_input2">
+  </label>
+  <h2>work</h2>
+  <label>
+    <input type="text" name="textfield2" id="userpwd" class="txt_input">
+  </label>
+  <h2>select</h2>
+  <label>
+	<select id='valueselect'>
+		<option value="职位信息" class="txt_input">职位信息</option>
+		<option value="薪水信息" class="txt_input">薪水信息</option>
+		<option value="行业分布" class="txt_input">行业分布</option>
+		<option value="公司规模" class="txt_input">公司规模</option>
+		<option value="工作经验" class="txt_input">工作经验</option>
+		<option value="工作经验" class="txt_input">学历要求</option>
+		<option value="工作地点" class="txt_input">工作地点</option>
+  </label>
+ 
+ 
+  <div class="rem_sub">
+    <label>
+      <input type="submit" class="sub_button" name="button" id="button" value="搜索" style="opacity: 0.7;" onclick="javascript:imshow();">
+    </label>
+  </div>
+  <script type="text/javascript">
+	function imshow(){
+        var username = document.getElementById("username").value;
+        var userpwd = document.getElementById("userpwd").value;
+		var valueselect=document.getElementById("valueselect").value;
+		if(username=="chengdu" && userpwd=="python")
+		{
+			switch(valueselect)
+			{
+			case "职位信息":window.open("lagou-成都-python_职位信息柱状图.html");break;
+			case "薪水信息":window.open("lagou-成都-python_薪水信息柱状图.html");break;
+			case "行业分布":window.open("lagou-成都-python_行业分布饼状图.html");break;
+			case "公司规模":window.open("lagou-成都-python_公司规模饼状图.html");break;
+			case "工作经验":window.open("lagou-成都-python_工作经验信息饼状图.html");break;
+			case "学历要求":window.open("lagou-成都-python_学历要求信息饼状图.html");break;
+			case "工作地点":window.open("lagou-成都-python_工作地点信息饼状图.html");break;
+			}
+		}
+		if(username=="chengdu" && userpwd=="嵌入式")
+		{
+			switch(valueselect)
+			{
+			case "职位信息":window.open("lagou-成都-嵌入式_职位信息柱状图.html");break;
+			case "薪水信息":window.open("lagou-成都-嵌入式_薪水信息柱状图.html");break;
+			case "行业分布":window.open("lagou-成都-嵌入式_行业分布饼状图.html");break;
+			case "公司规模":window.open("lagou-成都-嵌入式_公司规模饼状图.html");break;
+			case "工作经验":window.open("lagou-成都-嵌入式_工作经验信息饼状图.html");break;
+			case "学历要求":window.open("lagou-成都-嵌入式_学历要求信息饼状图.html");break;
+			case "工作地点":window.open("lagou-成都-嵌入式_工作地点信息饼状图.html");break;
+			}
+		}	      	        
+	  }
+</script>
+  
+</div>
+
+</div>
+
+</body></html>
